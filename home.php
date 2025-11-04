@@ -27,6 +27,11 @@ require_once("validador_acesso.php");
             <img src="imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             App Help Desk
         </a>
+        <ul  class="navbar-vav-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="logoff.php">Desconectar</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="container">
@@ -40,10 +45,14 @@ require_once("validador_acesso.php");
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6 d-flex justify-content-center">
-                                <img src="imgs/formulario_abrir_chamado.png" width="70" height="70">
+                                <a href="abrir_chamado.php">
+                                    <img src="imgs/formulario_abrir_chamado.png" width="70" height="70">
+                                </a>
                             </div>
                             <div class="col-6 d-flex justify-content-center">
-                                <img src="imgs/formulario_consultar_chamado.png" width="70" height="70">
+                                <a href="consultar_chamado.php">
+                                    <img src="imgs/formulario_consultar_chamado.png" width="70" height="70">
+                                </a>
                             </div>
                         </div>
                     </div>

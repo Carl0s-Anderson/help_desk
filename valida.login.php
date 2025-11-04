@@ -41,8 +41,9 @@
         }
     }
     if ($usuario_autenticado) {
-        echo ' usuario autenticado ';
+        //echo ' usuario autenticado ';
         $_SESSION['Autenticado'] = 'sim';
+         header('location: home.php');
     } else {
            $_SESSION['Autenticado'] = 'NAO';
         header('location: index.php?login=erro');
