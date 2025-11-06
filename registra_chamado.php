@@ -1,7 +1,5 @@
 <?php
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+session_start();
 
 
 
@@ -15,7 +13,7 @@ $dados = [$_POST['titulo'], $_POST['categoria'], $_POST['descricao']];
 $texto = implode(' - ', $dados) . PHP_EOL;
 */
 
-$texto = $titulo . ' - ' .  $categoria . ' - ' .  $descrição . PHP_EOL;
+$texto = $_SESSION['id']. ' - ' . $titulo . ' - ' .  $categoria . ' - ' .  $descrição . PHP_EOL;
 
 $arquivo =  fopen('arquivo.hd', 'a');
 

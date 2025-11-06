@@ -1,7 +1,5 @@
 <?Php
 require_once("validador_acesso.php");
-
-
 ?>
 <html>
 
@@ -27,7 +25,7 @@ require_once("validador_acesso.php");
             <img src="imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             App Help Desk
         </a>
-        <ul  class="navbar-vav-nav">
+        <ul class="navbar-vav-nav">
             <li class="nav-item">
                 <a class="nav-link" href="logoff.php">Desconectar</a>
             </li>
